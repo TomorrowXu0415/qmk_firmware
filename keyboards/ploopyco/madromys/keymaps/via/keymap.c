@@ -20,3 +20,8 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT( KC_BTN4, KC_BTN5, DRAG_SCROLL, KC_BTN2, KC_BTN1, KC_BTN3 )
 };
+
+const uint16_t PROGMEM DPI_CHANGE [] = {KC_BTN4, KC_BTN5, COMBO_END};
+combo_t key_combos[] = {
+	COMBO(DPI_CHANGE, DPI_CONFIG), 
+};
